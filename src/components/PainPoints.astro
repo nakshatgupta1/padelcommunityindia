@@ -1,0 +1,111 @@
+---
+---
+<section>
+  <div class="section-label">Sound familiar?</div>
+  <div class="pain-grid">
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">₹450/hr per person. Every time you play.</div>
+        <div class="pain-fix"><span>₹212/hr.</span> New balls and chilled water included. <span>Save ₹9,724/month.</span></div>
+      </div>
+    </div>
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">Courts unavailable. Booked. Wrong time. Wrong day.</div>
+        <div class="pain-fix">Two courts. <span>Every weeknight. Flexible time. Ours.</span></div>
+      </div>
+    </div>
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">Chasing 3 people just to confirm a game</div>
+        <div class="pain-fix">Your spot is <span>always confirmed.</span></div>
+      </div>
+    </div>
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/><path d="M12 17v.01"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">Different strangers every session. Zero chemistry.</div>
+        <div class="pain-fix">Same crew. <span>Real partnerships.</span> Better padel.</div>
+      </div>
+    </div>
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="8.5" cy="8.5" r="1" fill="#C8F54A"/><circle cx="15.5" cy="8.5" r="1" fill="#C8F54A"/><circle cx="15.5" cy="15.5" r="1" fill="#C8F54A"/><circle cx="8.5" cy="15.5" r="1" fill="#C8F54A"/><circle cx="12" cy="12" r="1" fill="#C8F54A"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">Showing up to play with someone who can't rally</div>
+        <div class="pain-fix">Everyone here <span>can actually play.</span></div>
+      </div>
+    </div>
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3.6 9a9 9 0 0 1 16.8 0"/>
+          <path d="M3.6 15a9 9 0 0 0 16.8 0"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">Dead, flat balls that kill the game before it starts</div>
+        <div class="pain-fix">Always <span>fresh tournament-grade balls.</span></div>
+      </div>
+    </div>
+
+    <div class="pain-card">
+      <div class="pain-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <div class="pain-text">
+        <div class="pain-problem">Hunting for water. Dispenser. Five-minute walk. Paying per bottle.</div>
+        <div class="pain-fix">Free cold bottles <span>waiting at the court.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const painSection = document.querySelector('.pain-grid');
+  if (painSection) {
+    const painObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.pain-card').forEach(card => {
+            card.classList.add('visible');
+          });
+          painObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    painObs.observe(painSection);
+  }
+</script>

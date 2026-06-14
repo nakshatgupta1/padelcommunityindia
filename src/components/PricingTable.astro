@@ -1,0 +1,89 @@
+---
+export interface Props {
+  launchDate?: string;
+  subheadline?: string;
+  tbc?: boolean;
+}
+
+const {
+  launchDate = 'July 2025 · Founding Batch',
+  subheadline = 'Everything included — courts, new tournament-grade balls, chilled water, monthly social events and a founding member welcome kit. The longer you commit, the better the rate.',
+  tbc = false,
+} = Astro.props;
+---
+<section id="pricing">
+  <div class="section-label">Membership</div>
+
+  <div class="pricing-launch">
+    <div class="pricing-launch-date">{launchDate}</div>
+    <h2 class="pricing-launch-headline">Choose your <span>commitment.</span></h2>
+    <p class="pricing-launch-sub">{subheadline}</p>
+  </div>
+
+  {tbc ? (
+    <div class="placeholder-block" style="max-width:680px;">
+      <div class="placeholder-label">Pricing</div>
+      <div class="placeholder-text">[PRICING TBD] — Coming soon</div>
+    </div>
+  ) : (
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th style="text-align:right">Per Month</th>
+          <th style="text-align:right">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="pt-plan">Monthly</div>
+            <div class="pt-note">Full flexibility. Spot not guaranteed for the following month — someone on a longer plan can take it.</div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;">
+            <div class="pt-price"><span class="pt-currency">₹</span>10,000<span class="pt-per">/mo</span></div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
+            <div style="font-size:13px;color:var(--muted);font-weight:300;">₹10,000</div>
+          </td>
+        </tr>
+        <tr class="pt-featured">
+          <td>
+            <div class="pt-plan">3 Months <span class="pt-tag">Most popular</span></div>
+            <div class="pt-note">Spot secured for the full quarter. Best entry point for new subscribers.</div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;">
+            <div class="pt-price"><span class="pt-currency">₹</span>9,000<span class="pt-per">/mo</span></div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
+            <div style="font-size:13px;color:var(--muted);font-weight:300;">₹27,000</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="pt-plan">6 Months</div>
+            <div class="pt-note">Half-year commitment. Spot locked, continuity guaranteed, better rate.</div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;">
+            <div class="pt-price"><span class="pt-currency">₹</span>8,000<span class="pt-per">/mo</span></div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
+            <div style="font-size:13px;color:var(--muted);font-weight:300;">₹48,000</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="pt-plan">Annual <span class="pt-tag">Best value</span></div>
+            <div class="pt-note">Your spot for the full year. The strongest signal you're serious — and the sharpest rate.</div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;">
+            <div class="pt-price"><span class="pt-currency">₹</span>6,000<span class="pt-per">/mo</span></div>
+          </td>
+          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
+            <div style="font-size:13px;color:var(--muted);font-weight:300;">₹72,000</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  )}
+</section>

@@ -1,0 +1,188 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PainPoints from '../../../components/PainPoints.astro';
+import WhatWeInclude from '../../../components/WhatWeInclude.astro';
+import FormatGrid from '../../../components/FormatGrid.astro';
+import PricingTable from '../../../components/PricingTable.astro';
+import CoachingAddOn from '../../../components/CoachingAddOn.astro';
+import ReclubSection from '../../../components/ReclubSection.astro';
+import RulesTable from '../../../components/RulesTable.astro';
+---
+<Base title="Inter(+) Morning · Casa De Padel · Padel Community India" description="A private morning padel subscription for intermediate and above players in East Pune. Two courts, 24 members, weekday mornings at Casa De Padel, Kharadi.">
+
+<!-- HERO -->
+<section class="hero" style="border-bottom: 1px solid var(--rule); padding-top: 10vh;">
+  <div class="hero-bg-word">PADEL</div>
+
+  <div class="hero-eyebrow">Pune · Casa De Padel, Kharadi · Inter(+) Morning Group</div>
+
+  <h1 class="hero-title">
+    Start Strong.<br>
+    <span>Play Sharp.</span><br>
+    Every Morning.
+  </h1>
+
+  <p class="hero-sub">
+    A private, invite-only padel subscription for intermediate and above players in East Pune.
+    Two courts. 1.5 hours per session. Five mornings a week. Match time is flexible — somewhere between 6 AM and 11 AM, based on who's playing that day.
+  </p>
+
+  <div class="hero-meta">
+    <div class="meta-item">
+      <span class="meta-label">Venue</span>
+      <span class="meta-value">Casa De Padel, Kharadi</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Time</span>
+      <span class="meta-value">6 AM – 11 AM</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Days</span>
+      <span class="meta-value">Mon – Fri</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Spots</span>
+      <span class="meta-value lime">24</span>
+    </div>
+  </div>
+  <div class="hero-rule"></div>
+</section>
+
+<PainPoints />
+
+<!-- WHAT THIS IS -->
+<section>
+  <div class="section-label">What this is</div>
+  <div class="what-grid">
+    <div>
+      <h2 class="what-headline">
+        Consistent courts.<br>
+        Consistent people.<br>
+        <span>Consistent game.</span>
+      </h2>
+    </div>
+    <div class="what-body">
+      <p>
+        Finding good padel in East Pune means either paying walk-in rates every morning, or spending more time
+        coordinating partners than actually playing. This subscription fixes that.
+      </p>
+      <p>
+        We have <strong>two courts at Casa De Padel, Kharadi every Monday to Friday — match time is flexible between 6 AM and 11 AM, decided each day based on who's playing.</strong>
+        As a member, your spot is reserved. You show up, you play.
+      </p>
+      <p>
+        The group is capped at <strong>24 intermediate and above players,</strong> skilled enough
+        that every match is worth showing up for, small enough that everyone knows everyone.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="section-label">How it works</div>
+  <div class="how-cards">
+    <div class="how-card">
+      <div class="how-card-num">01</div>
+      <div class="how-card-title">Register for the day</div>
+      <div class="how-card-body">
+        Members register for each morning directly on the <strong style="color:var(--white)">Reclub private community</strong>: one tap, done. See who else is confirmed before you even leave home. On any given morning, we expect <strong style="color:var(--white)">10–12 players</strong> from the group to show up.
+      </div>
+    </div>
+    <div class="how-card">
+      <div class="how-card-num">02</div>
+      <div class="how-card-title">Show up and play</div>
+      <div class="how-card-body">
+        Courts are ready at your session time. Matches are organised on the morning. Doubles, rotations,
+        and rest periods are managed by the Day Leader.
+        You play <strong style="color:var(--white)">approximately 1 to 1.5 hours</strong> per session.
+      </div>
+    </div>
+    <div class="how-card">
+      <div class="how-card-num">03</div>
+      <div class="how-card-title">Play more when you can</div>
+      <div class="how-card-body">
+        When other members don't register, available slots open up.
+        Active members naturally get more court time. The more consistent you are, the more you play.
+      </div>
+    </div>
+  </div>
+</section>
+
+<WhatWeInclude />
+
+<FormatGrid />
+
+<PricingTable launchDate="July 2025 · Founding Batch" />
+
+<CoachingAddOn />
+
+<ReclubSection />
+
+<!-- COMING SOON -->
+<section>
+  <div class="section-label">Coming soon</div>
+  <div class="coming-list">
+    <div class="coming-item">
+      <div class="coming-label">Game Footage</div>
+      <div class="coming-desc">Professional cameras on every court so you can <em>watch your own game back, spot patterns and fix them.</em> Details being finalised — this is a core part of what makes PCI different.</div>
+    </div>
+    <div class="coming-item">
+      <div class="coming-label">More Cities</div>
+      <div class="coming-desc">Mumbai and Bangalore next. <em>Same quality, same structure</em> — PCI expands city by city, venue by venue.</div>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section>
+  <div class="section-label">The venue</div>
+  <div class="venue-wrap" style="grid-template-columns:1fr;">
+    <div class="venue-left">
+      <h2 class="venue-headline">Casa De Padel<br>at <span>Playshire.</span></h2>
+      <div class="venue-address">Upper Kharadi Road, Kharadi, Pune</div>
+      <p class="venue-desc">
+        Playshire is one of Kharadi's best multi-sport complexes, a proper sports destination, not just a court booking. Casa De Padel sits inside it, which means you're playing in a facility built for people who take sport seriously. Rated 4.7 on Playo, open 24x7, and located in the heart of Kharadi's tech and residential corridor. Easy to get to before work, easy to stick to as a routine.
+      </p>
+      <div class="venue-sports">
+        <span class="venue-sport-tag active">Padel</span>
+        <span class="venue-sport-tag">Badminton</span>
+        <span class="venue-sport-tag">Football</span>
+        <span class="venue-sport-tag">Box Cricket</span>
+        <span class="venue-sport-tag">Snooker / Pool</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<RulesTable />
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-headline">
+    Ready to start<br><span>your mornings right?</span>
+  </h2>
+  <p class="cta-sub">Spots are extremely limited. Apply for an invite, we'll be in touch.</p>
+  <div class="cta-spots">
+    <div class="spot-dot"></div>
+    Accepting applications
+  </div>
+  <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,48px);letter-spacing:0.06em;color:var(--lime);margin:12px 0 0;">24 spots only</p>
+  <div class="cta-actions">
+    <a href="https://wa.me/918007306165" class="cta-btn cta-btn-primary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Apply on WhatsApp
+    </a>
+  </div>
+  <div style="margin-top:16px;font-size:13px;color:var(--muted);font-weight:300;">
+    By applying you confirm you've read the <a href="/terms" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(200,245,74,0.3);">Terms &amp; Conditions →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Pune Padel Club</div>
+  <div class="footer-note">Casa De Padel, Kharadi · Mon–Fri · 6 AM–11 AM · Inter(+) · Intermediate &amp; Above</div>
+</footer>
+
+</Base>

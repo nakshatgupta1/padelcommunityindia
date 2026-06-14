@@ -1,0 +1,20 @@
+---
+const navLinks = [
+  { label: 'How it works', href: '/#how-it-works' },
+  { label: 'Formats', href: '/#formats' },
+  { label: 'Pricing', href: '/#pricing' },
+  { label: 'Locations', href: '/#locations' },
+];
+---
+<nav>
+  <a href="/" class="nav-brand">
+    <div class="nav-logo-placeholder">Logo</div>
+    <span class="nav-logo">Padel Community <span>India</span></span>
+  </a>
+  <div class="nav-links">
+    {navLinks.map(link => (
+      <a href={link.href}>{link.label}</a>
+    ))}
+    <a href="/pune" class="nav-cta">Pune →</a>
+  </div>
+</nav>
