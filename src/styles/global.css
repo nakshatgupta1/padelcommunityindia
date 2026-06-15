@@ -360,32 +360,38 @@ section.hero {
 }
 
 /* ── WHAT THIS IS ── */
-.what-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
-}
-
 .what-headline {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(40px, 5.5vw, 72px);
   line-height: 1;
   letter-spacing: 0.04em;
   color: var(--white);
+  margin-bottom: 48px;
 }
 
 .what-headline span { color: var(--lime); }
 
-.what-body {
+.what-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.what-col {
   font-size: 15px;
   color: var(--muted);
   line-height: 1.8;
   font-weight: 300;
 }
 
-.what-body p + p { margin-top: 16px; }
-.what-body strong { color: var(--lime); font-weight: 500; }
+.what-col-rule {
+  width: 32px;
+  height: 2px;
+  background: var(--lime);
+  margin-bottom: 20px;
+}
+
+.what-col strong { color: var(--lime); font-weight: 500; }
 
 /* ── HOW IT WORKS ── */
 .how-cards {
@@ -1713,7 +1719,7 @@ header.terms-header {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 720px) {
-  .what-grid,
+  .what-cols,
   .how-cards,
   .play-grid,
   .reclub-wrap,
