@@ -435,7 +435,7 @@ section.hero {
 }
 
 .included-item {
-  background: var(--card);
+  background: var(--black);
   padding: 28px 28px 24px;
   display: flex;
   gap: 20px;
@@ -1530,9 +1530,8 @@ header.terms-header {
 }
 
 .step {
-  background: var(--card);
+  background: var(--black);
   padding: 36px 28px;
-  border-top: 3px solid rgba(200,245,74,0.2);
 }
 
 .step-num {
@@ -1560,6 +1559,9 @@ header.terms-header {
   color: var(--muted);
   font-weight: 300;
   line-height: 2;
+  background: var(--card);
+  padding: 14px 16px;
+  margin-top: 4px;
 }
 
 /* ── INDEX PAGE — FORMATS GRID ── */
@@ -1570,7 +1572,7 @@ header.terms-header {
 }
 
 .format-card {
-  background: var(--card);
+  background: var(--black);
   padding: 28px;
 }
 
@@ -1598,7 +1600,10 @@ header.terms-header {
   font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 1.65;
+  line-height: 2;
+  background: var(--card);
+  padding: 12px 14px;
+  margin-top: 6px;
 }
 
 /* ── INDEX PAGE — INCLUDED SHORT FORM ── */
@@ -1636,6 +1641,9 @@ header.terms-header {
   color: var(--muted);
   font-weight: 300;
   line-height: 2;
+  background: var(--card);
+  padding: 10px 14px;
+  margin-top: 6px;
 }
 
 /* ── INDEX PAGE — PRICING (simplified) ── */
