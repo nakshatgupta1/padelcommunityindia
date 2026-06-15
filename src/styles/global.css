@@ -1,5 +1,32 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ── HERO SHUFFLE ANIMATION ── */
+.hero-shuffle {
+  display: inline-block;
+  color: var(--lime);
+  position: relative;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.hero-shuffle.shuffle-out {
+  animation: shuffleOut 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.hero-shuffle.shuffle-in {
+  animation: shuffleIn 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes shuffleOut {
+  0%   { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-60px); }
+}
+
+@keyframes shuffleIn {
+  0%   { opacity: 0; transform: translateX(60px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
 :root {
   --black: #1A0A05;
   --card:  #0F1E35;

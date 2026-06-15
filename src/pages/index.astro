@@ -11,9 +11,7 @@ import PricingTable from '../components/PricingTable.astro';
   <div style="position:relative;z-index:2;">
     <div class="hero-eyebrow">Padel Community India (PCI) · Est. 2026</div>
     <h1 class="hero-title">
-      Play better.<br>
-      Play <span>consistently.</span><br>
-      Play with your people.
+      Play <span id="hero-shuffle" class="hero-shuffle">better.</span>
     </h1>
     <p class="hero-sub">
       PCI is India's first structured padel subscription network. Fixed courts. Competitive players. No logistics. Just show up and play, every weeknight, in your city.
@@ -320,5 +318,29 @@ import PricingTable from '../components/PricingTable.astro';
     </a>
   </div>
 </section>
+
+<script>
+  const words = ['better.', 'consistently.', 'with your people.'];
+  let current = 0;
+  const el = document.getElementById('hero-shuffle');
+
+  function next() {
+    current = (current + 1) % words.length;
+
+    el.classList.add('shuffle-out');
+
+    setTimeout(() => {
+      el.textContent = words[current];
+      el.classList.remove('shuffle-out');
+      el.classList.add('shuffle-in');
+
+      setTimeout(() => {
+        el.classList.remove('shuffle-in');
+      }, 350);
+    }, 350);
+  }
+
+  setInterval(next, 2400);
+</script>
 
 </Page>
