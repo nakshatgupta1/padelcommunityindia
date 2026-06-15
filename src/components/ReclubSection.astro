@@ -10,7 +10,6 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
   <div class="reclub-wrap">
 
     <div class="reclub-left">
-      <!-- Reclub logo placeholder -->
       <div style="width:120px;height:40px;background:var(--card);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;margin-bottom:28px;">
         <span style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);opacity:0.5;">Reclub logo</span>
       </div>
@@ -18,9 +17,10 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
         Everything runs<br>through <span>Reclub.</span>
       </h2>
       <p class="reclub-desc">
-        No WhatsApp chaos. No manual sign-up sheets. No "what time tonight?" messages an hour before.
-        The subscription runs on <strong>Reclub</strong>, a dedicated app built exactly for sports groups like this one.
-        Every member gets access. Everything happens in one place.
+        No WhatsApp chaos.<br>
+        No manual sign-up sheets.<br>
+        No "what time tonight?" an hour before.<br><br>
+        One app. Everything in one place.
       </p>
       <a href={reclubUrl} target="_blank" rel="noopener" class="reclub-badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:6px">
@@ -36,8 +36,8 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
           <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
         </div>
         <div class="reclub-feature-text">
-          <div class="reclub-feature-title">Register for tonight in one tap</div>
-          <div class="reclub-feature-desc">See who's confirmed, who's on the waitlist. No chasing, no confirming over chat.</div>
+          <div class="reclub-feature-title">Register in one tap</div>
+          <div class="reclub-feature-desc">See who's confirmed. No chasing. No chat confirmations.</div>
         </div>
       </div>
       <div class="reclub-feature">
@@ -46,7 +46,7 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
         </div>
         <div class="reclub-feature-text">
           <div class="reclub-feature-title">Vote on the format</div>
-          <div class="reclub-feature-desc">Mexicano tonight or a round robin? The group votes, the Day Leader locks it in. Democracy on the court.</div>
+          <div class="reclub-feature-desc">Group votes. Day Leader locks it in. No debates on the night.</div>
         </div>
       </div>
       <div class="reclub-feature">
@@ -55,7 +55,7 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
         </div>
         <div class="reclub-feature-text">
           <div class="reclub-feature-title">Team draws &amp; pairings</div>
-          <div class="reclub-feature-desc">Teams divided fairly and randomly. No awkward picking, no same pairs every night.</div>
+          <div class="reclub-feature-desc">Fair. Random. No awkward picking. No same pairs every night.</div>
         </div>
       </div>
       <div class="reclub-feature">
@@ -63,8 +63,8 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
           <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
         </div>
         <div class="reclub-feature-text">
-          <div class="reclub-feature-title">Track your history &amp; stats</div>
-          <div class="reclub-feature-desc">Sessions played, wins, partners. Your padel record, all in one place over time.</div>
+          <div class="reclub-feature-title">Stats &amp; history</div>
+          <div class="reclub-feature-desc">Sessions played, wins, partners. Your record, growing over time.</div>
         </div>
       </div>
       <div class="reclub-feature">
@@ -73,7 +73,7 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
         </div>
         <div class="reclub-feature-text">
           <div class="reclub-feature-title">Community chat</div>
-          <div class="reclub-feature-desc">Talk game, plan sessions, share clips without it getting buried in a family WhatsApp group.</div>
+          <div class="reclub-feature-desc">Talk game, share clips. Not buried in a family WhatsApp group.</div>
         </div>
       </div>
       <div class="reclub-feature">
@@ -81,8 +81,8 @@ const { reclubUrl = 'https://reclub.co' } = Astro.props;
           <svg viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
         </div>
         <div class="reclub-feature-text">
-          <div class="reclub-feature-title">Leaderboards &amp; competitions</div>
-          <div class="reclub-feature-desc">Live scores during Americanos and Mexicanos. Standings that update as you play.</div>
+          <div class="reclub-feature-title">Live leaderboards</div>
+          <div class="reclub-feature-desc">Scores update as you play. Standings live during Americanos and Mexicanos.</div>
         </div>
       </div>
     </div>
