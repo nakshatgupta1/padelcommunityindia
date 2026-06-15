@@ -12,13 +12,9 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100%;
 }
 
 body {
-  height: 100%;
   background: var(--black);
   color: var(--white);
   font-family: 'Inter', sans-serif;
@@ -253,10 +249,33 @@ nav {
 section {
   padding: 80px 6vw;
   border-bottom: 1px solid var(--rule);
-  min-height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  box-sizing: border-box;
+}
+
+/* ── SECTION REVEAL ANIMATIONS ── */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+section.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section.section-exit {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+section.hero {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section { opacity: 1; transform: none; transition: none; }
 }
 
 .section-label {

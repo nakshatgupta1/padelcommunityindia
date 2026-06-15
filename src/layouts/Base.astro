@@ -25,4 +25,27 @@ const {
 <body>
   <slot />
 </body>
+<script>
+  const sections = document.querySelectorAll('section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('section-visible');
+        entry.target.classList.remove('section-exit');
+      } else {
+        // Only apply exit animation if section was already visible (scrolling past it)
+        if (entry.target.classList.contains('section-visible')) {
+          entry.target.classList.add('section-exit');
+          entry.target.classList.remove('section-visible');
+        }
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  sections.forEach(section => observer.observe(section));
+</script>
 </html>
