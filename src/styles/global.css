@@ -431,13 +431,12 @@ section.hero {
 .included-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
-  background: var(--rule);
+  gap: 16px;
 }
 
 .included-item {
-  background: var(--black);
-  padding: 32px;
+  background: var(--card);
+  padding: 28px 28px 24px;
   display: flex;
   gap: 20px;
   align-items: flex-start;
@@ -1527,13 +1526,13 @@ header.terms-header {
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  background: var(--rule);
+  gap: 16px;
 }
 
 .step {
-  background: var(--black);
+  background: var(--card);
   padding: 36px 28px;
+  border-top: 3px solid rgba(200,245,74,0.2);
 }
 
 .step-num {
@@ -1560,19 +1559,18 @@ header.terms-header {
   font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 2;
 }
 
 /* ── INDEX PAGE — FORMATS GRID ── */
 .formats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  background: var(--rule);
+  gap: 16px;
 }
 
 .format-card {
-  background: var(--black);
+  background: var(--card);
   padding: 28px;
 }
 
@@ -1637,7 +1635,7 @@ header.terms-header {
   font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 /* ── INDEX PAGE — PRICING (simplified) ── */
