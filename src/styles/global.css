@@ -1763,21 +1763,38 @@ header.terms-header {
 
 .pricing-card {
   background: var(--card);
-  padding: 32px 28px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0;
   position: relative;
+  border-top: 3px solid rgba(216,208,196,0.2);
+  overflow: hidden;
 }
 
 .pricing-card-featured {
-  outline: 2px solid var(--lime);
-  outline-offset: -2px;
+  border-top-color: var(--lime);
   background: #0a1828;
+}
+
+.pricing-card-six {
+  border-top-color: var(--blue);
 }
 
 .pricing-card-annual {
   background: #0c1c30;
+  border-top-color: #6BA3CC;
+}
+
+.pc-card-body {
+  padding: 28px 28px 0;
+  flex: 1;
+}
+
+.pc-card-note {
+  margin: 24px 0 0;
+  padding: 14px 28px;
+  background: rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 .pc-tag-wrap {
@@ -1812,9 +1829,13 @@ header.terms-header {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--lime);
+  color: var(--muted);
   margin-bottom: 20px;
 }
+
+.pricing-card-featured .pc-plan { color: var(--lime); }
+.pricing-card-six .pc-plan { color: var(--blue); }
+.pricing-card-annual .pc-plan { color: #6BA3CC; }
 
 .pc-price-wrap {
   margin-bottom: 4px;
@@ -1868,7 +1889,6 @@ header.terms-header {
   color: var(--muted);
   font-weight: 300;
   line-height: 1.6;
-  flex: 1;
 }
 
 .pc-note em {
