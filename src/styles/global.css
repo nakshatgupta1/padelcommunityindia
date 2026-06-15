@@ -354,12 +354,15 @@ section {
 }
 
 .how-card-title {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 10px;
+  background: var(--lime);
+  color: var(--black);
+  padding: 4px 10px;
+  margin-bottom: 14px;
 }
 
 .how-card-body {
@@ -403,12 +406,15 @@ section {
 }
 
 .included-title {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 6px;
+  background: var(--lime);
+  color: var(--black);
+  padding: 4px 10px;
+  margin-bottom: 10px;
 }
 
 .included-desc {
@@ -937,11 +943,15 @@ section {
 }
 
 .reclub-feature-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 3px;
-  letter-spacing: 0.02em;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--lime);
+  color: var(--black);
+  padding: 4px 10px;
+  margin-bottom: 6px;
 }
 
 .reclub-feature-desc {
@@ -1046,11 +1056,15 @@ section {
 }
 
 .venue-cafe-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--white);
-  letter-spacing: 0.04em;
-  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--lime);
+  color: var(--black);
+  padding: 4px 10px;
+  margin-bottom: 10px;
 }
 
 .venue-cafe-desc {
@@ -1477,12 +1491,15 @@ header.terms-header {
 }
 
 .step-title {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 10px;
+  background: var(--lime);
+  color: var(--black);
+  padding: 4px 10px;
+  margin-bottom: 14px;
 }
 
 .step-body {
@@ -1551,12 +1568,15 @@ header.terms-header {
 }
 
 .inc-title {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 5px;
+  background: var(--lime);
+  color: var(--black);
+  padding: 4px 10px;
+  margin-bottom: 10px;
 }
 
 .inc-desc {
