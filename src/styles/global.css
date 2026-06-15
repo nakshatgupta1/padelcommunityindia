@@ -5,9 +5,9 @@
   --card:  #0F1E35;
   --lime:  #C8F54A;
   --blue:  #4B8CB5;
-  --white: #F5EAD8;
-  --muted: #9A7055;
-  --rule:  rgba(200,245,74,0.20);
+  --white: #C8F54A;
+  --muted: rgba(200,245,74,0.45);
+  --rule:  rgba(200,245,74,0.18);
 }
 
 html { scroll-behavior: smooth; }
