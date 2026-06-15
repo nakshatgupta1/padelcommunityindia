@@ -1660,3 +1660,21 @@ header.terms-header {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ── STRONG IN ALL BODY COPY = LIME ── */
+.how-card-body strong,
+.included-desc strong,
+.inc-desc strong,
+.play-card-body strong,
+.reclub-feature-desc strong,
+.venue-desc strong,
+.venue-cafe-desc strong,
+.pain-fix strong,
+.step-body strong,
+.footer-tagline strong,
+.hero-sub strong,
+.cta-sub strong,
+.pt-note strong {
+  color: var(--lime);
+  font-weight: 600;
+}
