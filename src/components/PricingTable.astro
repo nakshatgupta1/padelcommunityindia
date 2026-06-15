@@ -26,64 +26,60 @@ const {
       <div class="placeholder-text">[PRICING TBD] Coming soon</div>
     </div>
   ) : (
-    <table class="pricing-table">
-      <thead>
-        <tr>
-          <th>Plan</th>
-          <th style="text-align:right">Per month</th>
-          <th style="text-align:right;padding-left:32px;">Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <div class="pt-plan">Monthly</div>
-            <div class="pt-note">Full flexibility. Spot not guaranteed for the following month. Someone on a longer plan can take it.</div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
-            <div class="pt-price"><span class="pt-currency">₹</span>10,000<span class="pt-per">/mo</span></div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;padding-left:32px;">
-            <div class="pt-total">₹10,000</div>
-          </td>
-        </tr>
-        <tr class="pt-featured">
-          <td>
-            <div class="pt-plan">3 Months <span class="pt-tag">Most popular</span></div>
-            <div class="pt-note">Spot secured for the full quarter. Best entry point for new subscribers.</div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
-            <div class="pt-price"><span class="pt-currency">₹</span>9,000<span class="pt-per">/mo</span></div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;padding-left:32px;">
-            <div class="pt-total">₹27,000</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="pt-plan">6 Months</div>
-            <div class="pt-note">Half-year commitment. Spot locked, continuity guaranteed, better rate.</div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
-            <div class="pt-price"><span class="pt-currency">₹</span>8,000<span class="pt-per">/mo</span></div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;padding-left:32px;">
-            <div class="pt-total">₹48,000</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="pt-plan">Annual <span class="pt-tag">Best value</span></div>
-            <div class="pt-note">Your spot for the full year. The strongest signal you are serious and the sharpest rate.</div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;">
-            <div class="pt-price"><span class="pt-currency">₹</span>6,000<span class="pt-per">/mo</span></div>
-          </td>
-          <td style="text-align:right;white-space:nowrap;vertical-align:middle;padding-left:32px;">
-            <div class="pt-total">₹72,000</div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="pricing-cards">
+
+      <!-- MONTHLY -->
+      <div class="pricing-card">
+        <div class="pc-tag-wrap"></div>
+        <div class="pc-plan">Monthly</div>
+        <div class="pc-price-wrap">
+          <div class="pc-price"><span class="pc-currency">₹</span>10,000<span class="pc-per">/mo</span></div>
+        </div>
+        <div class="pc-total">Total <span>₹10,000</span></div>
+        <div class="pc-divider"></div>
+        <div class="pc-note">Full flexibility. Spot not guaranteed for the following month. Someone on a longer plan can take it.</div>
+      </div>
+
+      <!-- 3 MONTHS — FEATURED -->
+      <div class="pricing-card pricing-card-featured">
+        <div class="pc-tag-wrap"><span class="pc-tag">Most popular</span></div>
+        <div class="pc-plan">3 Months</div>
+        <div class="pc-price-wrap">
+          <div class="pc-price"><span class="pc-currency">₹</span>9,000<span class="pc-per">/mo</span></div>
+        </div>
+        <div class="pc-total">Total <span>₹27,000</span></div>
+        <div class="pc-divider"></div>
+        <div class="pc-note">Spot secured for the full quarter. <em>Best entry point</em> for new subscribers.</div>
+      </div>
+
+      <!-- 6 MONTHS -->
+      <div class="pricing-card">
+        <div class="pc-tag-wrap"></div>
+        <div class="pc-plan">6 Months</div>
+        <div class="pc-price-wrap">
+          <div class="pc-price"><span class="pc-currency">₹</span>8,000<span class="pc-per">/mo</span></div>
+        </div>
+        <div class="pc-total">Total <span>₹48,000</span></div>
+        <div class="pc-divider"></div>
+        <div class="pc-note">Half-year commitment. Spot locked, continuity guaranteed, better rate.</div>
+      </div>
+
+      <!-- ANNUAL -->
+      <div class="pricing-card pricing-card-annual">
+        <div class="pc-tag-wrap"><span class="pc-tag-outline">Best value</span></div>
+        <div class="pc-plan">Annual</div>
+        <div class="pc-price-wrap">
+          <div class="pc-price"><span class="pc-currency">₹</span>6,000<span class="pc-per">/mo</span></div>
+        </div>
+        <div class="pc-total">Total <span>₹72,000</span></div>
+        <div class="pc-divider"></div>
+        <div class="pc-note">Your spot for the full year. <em>The strongest signal</em> you are serious and the sharpest rate.</div>
+      </div>
+
+    </div>
   )}
+
+  <p style="margin-top:20px;font-size:12px;color:var(--muted);font-weight:300;max-width:480px;line-height:1.7;">
+    Longer plans lock your spot for the full duration. Monthly members may lose their spot if someone on a longer plan joins.
+  </p>
 </section>
