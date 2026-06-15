@@ -1,13 +1,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black: #0A1A10;
-  --green: #112B1A;
-  --card:  #162E1E;
+  --black: #1A0A05;
+  --card:  #0F1E35;
   --lime:  #C8F54A;
-  --white: #F0EBE0;
-  --muted: #7A9A82;
-  --rule:  rgba(200,245,74,0.25);
+  --blue:  #4B8CB5;
+  --white: #F5EAD8;
+  --muted: #9A7055;
+  --rule:  rgba(200,245,74,0.20);
 }
 
 html { scroll-behavior: smooth; }
@@ -32,7 +32,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to bottom, rgba(10,26,16,0.95), transparent);
+  background: linear-gradient(to bottom, rgba(26,10,5,0.95), transparent);
 }
 
 .nav-brand {
@@ -125,10 +125,10 @@ nav {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10,26,16,0.45) 0%,
-    rgba(10,26,16,0.3) 40%,
-    rgba(10,26,16,0.85) 75%,
-    rgba(10,26,16,1) 100%
+    rgba(26,10,5,0.45) 0%,
+    rgba(26,10,5,0.3) 40%,
+    rgba(26,10,5,0.85) 75%,
+    rgba(26,10,5,1) 100%
   );
   z-index: 0;
 }
