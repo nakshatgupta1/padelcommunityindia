@@ -6,7 +6,7 @@
   --lime:  #C8F54A;
   --blue:  #4B8CB5;
   --white: #F0EBE0;
-  --muted: #B0A090;
+  --muted: #D8D0C4;
   --rule:  rgba(200,245,74,0.25);
 }
 
@@ -329,7 +329,7 @@ section {
 }
 
 .what-body p + p { margin-top: 16px; }
-.what-body strong { color: var(--white); font-weight: 500; }
+.what-body strong { color: var(--lime); font-weight: 500; }
 
 /* ── HOW IT WORKS ── */
 .how-cards {
@@ -459,7 +459,7 @@ section {
   margin-top: 8px;
 }
 
-.who-list li strong { color: var(--white); font-weight: 500; }
+.who-list li strong { color: var(--lime); font-weight: 500; }
 
 /* ── PRICING ── */
 .pricing-launch { margin-bottom: 48px; }
@@ -882,7 +882,7 @@ section {
   margin-bottom: 28px;
 }
 
-.reclub-desc strong { color: var(--white); font-weight: 500; }
+.reclub-desc strong { color: var(--lime); font-weight: 500; }
 
 .reclub-badge {
   display: inline-flex;
@@ -1226,7 +1226,7 @@ section {
   line-height: 1.8;
 }
 
-.coaching-body strong { color: var(--white); font-weight: 500; }
+.coaching-body strong { color: var(--lime); font-weight: 500; }
 
 .coaching-note {
   margin-top: 16px;
@@ -1402,7 +1402,7 @@ header.terms-header {
   line-height: 1.8;
 }
 
-.term-body strong { color: var(--white); font-weight: 500; }
+.term-body strong { color: var(--lime); font-weight: 500; }
 
 .acceptance {
   padding: 40px 6vw;
@@ -1418,7 +1418,7 @@ header.terms-header {
   line-height: 1.8;
 }
 
-.acceptance strong { color: var(--white); font-weight: 500; }
+.acceptance strong { color: var(--lime); font-weight: 500; }
 
 .back-cta {
   padding: 0 6vw 80px;
