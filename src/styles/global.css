@@ -362,7 +362,7 @@ section.hero {
 /* ── WHAT THIS IS ── */
 .what-headline {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(40px, 5.5vw, 72px);
+  font-size: clamp(24px, 3.2vw, 52px);
   line-height: 1;
   letter-spacing: 0.04em;
   color: var(--white);
