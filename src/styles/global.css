@@ -431,12 +431,13 @@ section.hero {
 .included-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 2px;
+  background: var(--rule);
 }
 
 .included-item {
   background: var(--black);
-  padding: 28px 28px 24px;
+  padding: 32px;
   display: flex;
   gap: 20px;
   align-items: flex-start;
@@ -1526,7 +1527,8 @@ header.terms-header {
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 2px;
+  background: var(--rule);
 }
 
 .step {
@@ -1558,17 +1560,15 @@ header.terms-header {
   font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 2;
-  background: var(--card);
-  padding: 14px 16px;
-  margin-top: 4px;
+  line-height: 1.7;
 }
 
 /* ── INDEX PAGE — FORMATS GRID ── */
 .formats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 2px;
+  background: var(--rule);
 }
 
 .format-card {
@@ -1600,10 +1600,7 @@ header.terms-header {
   font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 2;
-  background: var(--card);
-  padding: 12px 14px;
-  margin-top: 6px;
+  line-height: 1.65;
 }
 
 /* ── INDEX PAGE — INCLUDED SHORT FORM ── */
@@ -1640,10 +1637,7 @@ header.terms-header {
   font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 2;
-  background: var(--card);
-  padding: 10px 14px;
-  margin-top: 6px;
+  line-height: 1.6;
 }
 
 /* ── INDEX PAGE — PRICING (simplified) ── */
