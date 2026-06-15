@@ -2103,7 +2103,10 @@ header.terms-header {
 .lb-app {
   background: var(--card);
   border-left: 2px solid var(--lime);
-  padding: 28px 36px;
+  padding: 24px 36px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .lb-app-badge {
@@ -2114,16 +2117,17 @@ header.terms-header {
   text-transform: uppercase;
   background: var(--lime);
   color: var(--black);
-  padding: 3px 10px;
-  margin-bottom: 14px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .lb-app-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
   font-weight: 300;
-  line-height: 1.8;
-  max-width: 600px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .lb-app-desc strong { color: var(--white); font-weight: 500; }
