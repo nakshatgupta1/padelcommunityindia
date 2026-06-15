@@ -1592,7 +1592,9 @@ header.terms-header {
 .pt-total {
   font-size: 13px;
   color: var(--muted);
-  font-weight: 300;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: right;
 }
 
 /* ── PLACEHOLDER SECTIONS ── */
