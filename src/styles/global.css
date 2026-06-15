@@ -85,7 +85,7 @@ nav {
 
 .nav-links a:hover { color: var(--lime); }
 
-.nav-cta {
+.nav-links a.nav-cta {
   background: var(--lime);
   color: var(--black);
   padding: 8px 18px;
